@@ -2,7 +2,75 @@ h1 {
   color: blue;
   font-size: 40px;
 }
+
 h2 {
   color: green;
   font-size: 5px;
 }
+
+p {
+  color: blueviolet;
+  font-size: large;
+}
+
+i {
+  text-align: center;
+  text-decoration: dashed;
+}
+
+/* these above are element selectors */
+
+/* Group selectors */
+
+h1,
+h2,
+p,
+i {
+  font-weight: 600;
+}
+
+/* Id selector used to style (only one /single tags)  */
+/* to apply styles for  one or more than tag we use classes */
+
+/* ID selectors */
+#title {
+  background-color: black;
+  font-size: medium;
+  width: 40%;
+}
+
+/* class selectors */
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+  background-color: aliceblue;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* INHERITANCE */
+/* Children inherit styles from parent , unless have there own styles  */
+body {
+  color: red;
+  font-size: 14px;
+  line-height: 1.5;
+  background: gray;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+  background: yellow;
+  color: aqua;
+}
+
+.special {
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: wheat;
+}
+/* Note few CSS style not applied to child elements , example { border : 1px solid red }, border style is not applicable to child elements */
