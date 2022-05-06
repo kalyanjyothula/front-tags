@@ -1,0 +1,45 @@
+/* Last Rule, Specificity, and  * universal selector */
+/* Last Rule */
+
+p {
+  color: red;
+}
+
+/* more css code  */
+p {
+  color: green;
+}
+
+/* Note : in CSS it always consider the last rule of css selectors/tags */
+/* in above example p tag has color GREEN in html */
+
+
+/* Specificity  */
+
+/* Id Selector > Class Selector > Tag Selector > Universal selector (*) */
+
+#heading {
+  /* high priority */
+  color: yellow;
+  font-size: 40px;
+  background: gray;
+}
+
+.heading {
+  /* second high priority */
+  color: green;
+  font-size: 40px;
+  background: gray;
+}
+
+h1 {
+  /* third high priority */
+  color: palevioletred;
+  font-size: 20px;
+}
+
+* {
+   /* last priority */
+   color: firebrick;
+   font-size: 20px;
+}
