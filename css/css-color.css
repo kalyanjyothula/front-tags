@@ -1,0 +1,73 @@
+/* #first {
+  color: brown;
+  background: yellow;
+}
+#second {
+  color: green;
+  background:blueviolet;
+}
+#third {
+  color: aliceblue;
+  background: pink;
+}
+#fourth {
+  color: aqua;
+  background: orange;
+} */
+
+/* RGB */
+/* #first {
+  color: rgb(165, 42, 42);
+  background: rgb(255, 255, 0);
+}
+#second {
+  color: rgb(0, 128, 0);
+  background:rgb(138, 43, 226);
+}
+#third {
+  color: rgb(240, 248, 255);
+  background: rgb(255, 192, 203);
+}
+#fourth {
+  color: rgb(0, 255, 255);
+  background: rgb(255, 165, 0);
+} */
+
+/* RGBA  */
+/* #first {
+  color: rgba(165, 42, 42, 0.75);
+  background: rgba(255, 255, 0, 0.9);
+}
+
+#second {
+  color: rgba(0, 128, 0, 1);
+  background: rgba(138, 43, 226, 0.89);
+}
+
+#third {
+  color: rgba(240, 248, 255, 1);
+  background: rgba(255, 192, 203, 1);
+}
+
+#fourth {
+  color: rgba(0, 255, 255, 1);
+  background: rgba(255, 165, 0, 0.6);
+} */
+
+/* Hex */
+#first {
+  color: #a52a2a;
+  background: #ffff00;
+}
+#second {
+  color: #008000;
+  background:#8a2be2;
+}
+#third {
+  color: #f0f8ff;
+  background: #ffc0cb;
+}
+#fourth {
+  color: #00ffff;
+  background: #ffa500;
+}
