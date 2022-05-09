@@ -1,0 +1,120 @@
+/* PIXAL - one dot in the page
+   PIXELS are absolut values , it will not change based on device / size or width of the browser 
+*/
+
+.pixel {
+  font-size: 40px;
+  color: wheat;
+  background: blue;
+}
+
+/* PERCENT - IS RELATIVE UNIT , IT DEPENDS ON PARENT 
+
+RELATIVE ELEMENT STYLES DOES N'T APPLICABLE, IF PARENT STYLES/ELEMENT NOT DEFINED
+*/
+
+.outer {
+  height: 200px;
+  width: 200px;
+  background: blue;
+}
+
+.inner {
+  height: 50%;
+  width: 50%;
+  background: red;
+}
+
+/* EM  - Relative , It Depends on Parent  
+   Default parent is Browser , that has font size : 16px
+*/
+/* 
+.parent {
+  font-size: 32px;
+}
+
+.em-class {
+  font-size: 0.5em;
+}
+
+.px-class {
+  font-size: 32px;
+} */
+
+/*  REM - RELATIVE , depends on root
+    1 rem = 16px 
+*/
+
+/* html {
+  font-size: 32px;
+} */
+
+.em-class {
+  font-size: 0.5rem;
+}
+
+.px-class {
+  font-size: 32px;
+}
+
+/* VIEW PORT UNITS
+  vh - height - percent of the screen 
+  vw - width  - percent of the screen 
+*/
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+.hero {
+  background: green;
+  width: 100vw;
+  height: 100vh;
+}
+
+.another {
+  background: blue;
+  height: 30vh;
+  width: 45vw;
+}
+
+/* CALC - FUNCTION
+    PERFORM MATH OPERATIONS + - * /
+    MIX & MATCH VALUES
+*/
+
+/* .navbar {
+  font-size: 2rem;
+  color: wheat;
+  background: green;
+  height: 100px;
+}
+
+.banner {
+  height: calc(100vh - 100px);
+  background: red;
+} */
+
+
+/* HEIGHT , MIN HEIGHT, MAX HEIGHT, OVERFLOW */
+
+.navbar {
+  font-size: 2rem;
+  color: wheat;
+  background: green;
+  height: 100px;
+}
+
+.banner {
+  height: calc(100vh - 100px);
+  background: red;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.example {
+  height: 20px;
+
+}
