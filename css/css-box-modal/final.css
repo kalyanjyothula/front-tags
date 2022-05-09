@@ -1,0 +1,48 @@
+.main {
+  padding: 30px;
+}
+
+.icon {
+  border-radius: 3px;
+  box-shadow: -3px 3px 4px 1px rgba(243, 104, 174, 0.8), 3px -3px 4px 1px rgba(243, 104, 174, 0.8);
+  border: 1px solid lightgrey;
+  text-align: center;
+  padding: 30px;
+  width: 12rem;
+  margin: 0 auto;
+}
+
+.circle {
+  background: rgb(228, 93, 115);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.description {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1;
+  /* margin-top: 2px; */
+  letter-spacing: 2px;
+
+}
+
+button {
+  height: 30px;
+  text-transform: capitalize;
+  border-radius: 2px;
+  color: white;
+  background: blue;
+  font-weight: 600;
+  /* border: 1px solid blue; */
+  border: transparent;
+}

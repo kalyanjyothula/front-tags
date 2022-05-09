@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+
+}
+
+/* div {
+  font-size: 2rem;
+  background: #ff0000;
+  padding: 40px; */
+  /* color: white; */
+  /* padding: 10px 20px 30px 40px; */
+  /* padding: 10px 20px 30px; */
+  /* padding: 10px 20px; 
+} */
+/* 
+div {
+  font-size: 2rem;
+  background: #ff0000;
+  padding: 40px;
+  margin: 40px;
+  color: white;
+  margin: 10px 20px 30px 40px; */
+  /* margin: 10px 20px 30px; */
+  /* margin: 10px 20px;
+} */
+
+
+/* div {
+  font-size: 2rem;
+  background: #ff0000;
+  padding: 40px;
+  margin: 40px;
+  color: white;
+  /* border: 10px solid green; */
+  /* border-bottom: 10px double green; */
+/* } */ 
+
+/* p {
+  height: 30px;
+  font-size: 2rem;
+  background: gray;
+  border-radius: 50%;
+  margin-top: -80px;
+} */
+
+/* OUTLINE */
+
+div {
+  margin-top: 100px;
+}
+
+.one {
+  text-decoration: none;
+  padding: 30px;
+  background: lightgreen;
+  margin: 10px;
+  border: 0.2rem solid rebeccapurple;
+}
+
+.two {
+  text-decoration: none;
+  padding: 30px;
+  background: lightgreen;
+  margin: 10px;
+  outline: 0.2rem solid rebeccapurple;
+  /* outline-offset: 10px; */
+  outline-offset: -10px;
+}
