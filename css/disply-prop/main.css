@@ -1,0 +1,164 @@
+/* DISPLAY PROP
+
+BLOCK - Always starts a newline and spans full width
+INLINE - Does n't start with new line and spans only content 
+
+*/
+
+/* .block {
+  background: red;
+  color: white;
+  /* display: inline; 
+}
+
+.inline {
+  background: blue;
+  color: white;
+  /* display: block; 
+} */
+
+/* Horizontal CENTERING */
+
+/* body {
+  text-align: center;
+  /* To center span elements we use parent element prop , text-align : center  *
+} */
+
+.block {
+  background: red;
+  color: white;
+  width: 300px;
+  /* margin: 2rem auto; */
+  /* to center block level element we use margin: 0 auto; */
+}
+
+
+.inline {
+  background: blue;
+  color: white;
+
+}
+
+/* 
+BLOCK : browser respects width/height , top/bottom, margin,  ..etc element
+
+INLINE: browser does n't respect width/height, top/bottom, margin,   of the element
+*/
+
+/* div {
+  background: red;
+  color: #fff;
+  margin: 40px;
+  height: 60px;
+  padding: 10px;
+  border: 2px solid #fdd;
+   support 
+}
+
+span {
+  background: red;
+  color: #fff;
+  margin: 40px;
+  /* not support */
+  /* height: 60px; */
+  /* not support */
+  /* padding: 40px; */
+  /*  support */
+  /* border: 2px solid green; */
+  /*  support 
+} 
+
+
+/* making use of display: block  */
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+ul li {
+  list-style: none;
+  /* color: red; */
+}
+
+ul li a {
+  text-decoration: none;
+  background: blue;
+  color: #fff;
+  margin: 10px; 
+  padding: 10px 0;
+  display: block; /* if we did n't use block then margin & padding top will not apply */
+  text-align: center;
+}
+
+.box-1, .box-2, .box-3 {
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.box-1 {
+  background: red;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  /* By default box-sizing is content-box ,  */
+  /* border-box - , it shrink the margin & padding in the width of the box/height of the box
+  width: 200px -> 160px context box & 20px + 20px top & bottom padding
+  */
+}
+.box-2 {
+  background: green;
+}
+.box-3 {
+  background: blue;
+  padding: 20px;
+}
+
+/* Inline- block
+It does n't start with new line &
+browser respects the height, width & top/bottom margin 
+*/
+
+.in-bl {
+  background: orange;
+  text-decoration: none;
+  font-size: 2rem;
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  color: #fff;
+  margin: 10px;
+}
+
+/* display 
+none : remove from the flow and hide the element & collapse the element space 
+
+opacity, visibility - hides the element & preserve the element space in dom
+
+*/
+
+div {
+  background: red;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 10px 0px
+}
+
+.none {
+  display: none;
+}
+.opacity-1 {
+  opacity: 1;
+}
+
+.opacity-2 {
+  opacity: 0.5;
+}
+
+.opacity-3 {
+  opacity: 0;
+}
+.visiblity {
+  visibility: hidden;
+}
