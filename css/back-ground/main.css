@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  height: 600px;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.first {
+  background: url('./images/first.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 50%;
+  /* x-axis(20%), y-axis(50%) */
+
+}
+
+.second {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/./second.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* covers the entire div */
+  background-position: center;
+  background-attachment: fixed;
+  /* while scrolling background image does n't move but content on the image will move*/
+  /* short hand property , background */
+  
+  /* background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/./second.jpg') center/cover fixed no-repeat;
+ ; */
+
+
+}
+
+.third {
+  background: url('./images/third.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+div {
+  width: 300px;
+  height: 200px;
+  margin: 5px 0;
+}
+
+.one {
+  background: linear-gradient(red, green, yellow, blue);
+}
+
+.two {
+  background: linear-gradient(to top, red, green, pink, lightblue);
+  background: linear-gradient(to left, red, green, pink, lightblue);
+  background: linear-gradient(to right, red, green, pink, lightblue);
+}
+
+.three {
+  background: linear-gradient(200deg, red, green, pink, lightblue);
+  background: linear-gradient(90deg, red, green, pink, lightblue);
+  background: linear-gradient(180deg, red, green, pink, lightblue);
+}
+
+.four {
+  background: linear-gradient(to top left, red, green, pink, lightblue);
+  background: linear-gradient(to top right, red, green, pink, lightblue);
+  /* we can use rgba for colors */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
