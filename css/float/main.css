@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* float allow to continue the next element into inline, we can restrict this behavior using clear:right/left/both   */
+
+div {
+  /* width: 25%; */
+  width: 33.3%;
+  height: 400px;
+}
+
+.one {
+  /* float: right; */
+  float: left;
+  background: red;
+}
+
+.two {
+  float: right;
+  background: green;
+}
+
+.three {
+  float: left;
+  background: yellow;
+}
+
+.four {
+  float: left;
+  background: blue;
+}
+
+p {
+  /* clear: left; */
+  /* clear: both; */
+  /* clear: right; */
+}
+
+h1{
+  clear: both;
+}
