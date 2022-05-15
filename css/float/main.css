@@ -34,7 +34,7 @@ div {
 
 p {
   /* clear: left; */
-  /* clear: both; */
+  clear: both;
   /* clear: right; */
 }
 

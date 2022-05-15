@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* position : static - default, always positioned according to normal flow 
+
+position : relative - position relative to its normal flow
+
+top, left, right, bottom
+
+we can not occupy the position : relative element space , if we move the element form the there relative position 
+  */
+
+/*
+position: absolute - it position the element relative to the parent with position relative
+& it allow the successor element to occupy the space of the position: absolute element
+
+*/
+/* .nav {
+  margin-top: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  background: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+
+} */
+
+/*  position: sticky - it toggles the element b/w relative & fixed,
+when it reaches certain scrolling part the it will become fixed
+*/
+.nav {
+  margin-top: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  background: red;
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: white;
+
+}
+
+div {
+  background: yellow;
+  border: 1px solid red;
+  margin-top: 40px;
+  /* for positions absolute */
+  /* position: relative; */
+}
+
+.one {
+  background: blue;
+  color: white;
+  /* position: relative;
+  top: 80px;
+  right: 40px; */
+  /* position: relative; */
+}
+
+.two {
+  background: green;
+  color: white;
+
+}
+
+.spe {
+  background: pink;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.len {
+  height: 100vh;
+}
+
+/* Media query */
+/* responsive design for mobile
+style the elements for different screen size
+min-width - starting from
+max-width - up to
+*/
+
+.sample {
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  background: red;
+  text-decoration: underline;
+  color: white;
+
+}
+
+@media screen and (max-width: 32rem) {
+  h1 {
+    background: green;
+    color: black;
+  }
+}
+
+div {
+  /* margin: 10px; */
+  background: #fff;
+  margin: 10px auto;
+}
+
+/* z-index --- >  z-axis
+ 0 -default
+ does n't work on position: static
+*/
+
+.banner {
+  border: 2px solid green;
+  height: 100vh;
+  width: 80vw;
+  position: relative;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border: 1px solid gray;
+}
+
+.img1 {
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.img2 {
+  top: 10%;
+  left: 5%;
+  z-index: 2;
+}
+
+.img3 {
+  top: 20%;
+  left: 10%;
+}
