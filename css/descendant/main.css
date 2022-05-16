@@ -1,0 +1,79 @@
+/* 
+3 types of sectors
+1. id
+2. class
+3. tag(html element)
+*/
+
+#heading {
+  background: yellow;
+  margin: 10px auto;
+}
+
+/* apply for descendant elements of ID Heading  */
+
+#heading h1 {
+  color: #fff;
+}
+
+.heading {
+  margin: 10px auto;
+  background: blueviolet;
+}
+
+/* apply only for h1 child element of heading class */
+
+.heading>h1 {
+  color: #fff;
+}
+
+/* apply for h1 descendant elements of heading class */
+
+/* .heading h1 {
+  color: gray;
+} */
+
+.heading p::first-line {
+  text-transform: capitalize;
+}
+
+.heading p::first-letter {
+  font-size: 2rem;
+}
+
+.heading:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* 
+:link - unvisited link with href
+:visited - visited link s
+:hover - 
+:active - as user click's
+a - all links
+
+*/
+
+
+a {
+  display: block;
+  margin: 10px;
+}
+
+a:link {
+  background: red;
+}
+
+a:visited {
+  color: #fff;
+}
+a:active {
+  color: black;
+}
+
+/* :root ->  root element of html (html tag) */
+
+:root {
+  font-size: 10px /*  it applicable to entire html document */
+}

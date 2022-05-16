@@ -61,6 +61,9 @@ p {
   font-weight: 600;
   text-transform: capitalize;
   letter-spacing: 2px;
+  /* transition-timing-function: ease; */
+  /* transition: all 2s; */
+  animation: top 3s ease-in-out 1 forwards;
   /* border: 1px solid red; */
 }
 
@@ -72,4 +75,37 @@ button {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+@keyframes top {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+
+    /* transition-timing-function: ease; */
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.description,
+.element {
+  animation: bottom 3s ease-in-out 1 forwards;
+}
+
+@keyframes bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+
+    /* transition-timing-function: ease; */
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
