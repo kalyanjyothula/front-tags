@@ -1,0 +1,64 @@
+/* text-shadow: x-axis, y-axis blur color
+  box-shadow: x-axis y-axis blur spread color
+
+*/
+
+.text {
+  /* text-shadow: 2px 2px 4px red; */
+  text-shadow: -2px -2px 4px red;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  text-align: center;
+  color: #fff;
+  margin: 10px auto;
+  border-radius: 3px;
+  /* box-shadow: 2px 2px 4px green; */
+  box-shadow: 2px 2px 4px green, -2px -2px 4px green;
+  transition: box-shadow 2s ease-in-out;
+}
+
+/* object-fit : cover, contain, fill, none, scale-down  */
+/* object-fit is like background-size: cover */
+
+img {
+  width: 100%;
+  display: block;
+  height: 300px;
+  object-fit: cover;
+  /* object-fit: fill; */
+  /* object-fit: scale-down; */
+}
+
+.one {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+
+.two {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+
+/* is function -- is() */
+
+/* nav h2:hover,
+header h2:hover,
+section h2:hover {
+  color: red;
+} */
+
+/* :is(nav, header, section) h2:hover {
+  color: green;
+} */
+
+/* not() - function */
+
+.not_cls :not(h2) {
+  color: red;
+}
