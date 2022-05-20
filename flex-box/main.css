@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid red;
+}
+
+.box {
+  padding: 30px;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+}
+
+.box-1 {
+  background: brown;
+  /* font-size: 90px; /* it increased bcoz , to check the align items baseline property */
+}
+.box-2 {
+  background: rgb(231, 170, 56);
+}
+.box-3 {
+  background: rgb(123, 204, 30);
+}
+.box-4 {
+  background: rgb(118, 18, 211);
+}
+.box-5 {
+  background: rgb(194, 105, 3);
+}
+
+.dummy {
+  background: red;
+}
+
+
+header {
+  display: flex;
+  background: rgb(238, 245, 248);
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  color: rgb(83, 116, 177);
+  letter-spacing: 2px;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 0 1rem; /* row_gap column_gap */
+}
+
+.navlink {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: rgb(42, 47, 90);
+}

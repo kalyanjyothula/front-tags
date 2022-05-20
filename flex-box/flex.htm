@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+      .container {
+        /* flex */
+        display: flex;
+        /* display: inline-flex;  */
+        /* display: inline-flexbox; */
+        /* ------------------------------------------------------------------------------------- */
+        /* flex-direction */
+        /* flex-direction : row(default) row-reverse column column-reverse */
+        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* ------------------------------------------------------------------------------------- */
+        /* flex-wrap */
+        /* flex-wrap: nowrap(default) wrap wrap-reverse */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; /* Wrap items in reverse order */
+        /* ------------------------------------------------------------------------------------- */
+        /* justify-content */
+        /* justify content horizontal alignment  */
+        /* flex-start(default) flex-end center */
+        /* justify content evenly distribution */
+        /* space-between , start with first item without margin & end with last item without margin but in b/w elements have distributed margin */
+        /* space-around , side margins  */
+        /* space-evenly , even margins  */
+
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+
+        /* ------------------------------------------------------------------------------------- */
+        /* align-items */
+        /* it align items in vertical axis (vertical alignment) */
+        /* align-items stretch(default) flex-start flex-end center baseline*/
+        /* height: 60vh; */
+        /* align-items: stretch; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        /* align-items: baseline;  it align items on baseline of the container , we can see by increasing the size of the flex item */
+
+        /* ------------------------------------------------------------------------------------- */
+        /* align-content */
+        /* sets the distribution of space between and around content items  */
+        /* stretch (default), flex-end flex-start space-around space-between center */
+        /* height: 70vh;
+        flex-wrap: wrap;
+        align-content: stretch;
+        align-content: flex-start;
+        align-content: flex-end;
+        align-content: space-around; imp 
+        align-content: space-between; imp 
+        align-content: center; */
+
+        /* ------------------------------------------------------------------------------------- */
+        /* Main Axis & Cross Axis */
+        /* refer imag for clear understanding */
+        /* row - mainAxis(x-axis)  & column mainAxis(y-axis)*/
+        /* height: 100vh;
+        align-items: center;
+        justify-content: center; */
+
+        /* ------------------------------------------------------------------------------------- */
+        /* order */
+        /* order === all children have order : 0 by default */
+        /* order = changes the order of the elements in flex flow */
+        /* display: flex */
+        /* display: column; optional  */
+
+        /* ------------------------------------------------------------------------------------- */
+        /* align-self */
+        /* align individual items that was not follow the flex instructions */
+        /* align-items: flex-end;
+        height: 100vh; */
+
+        /* ------------------------------------------------------------------------------------- */
+        /* flex-grow */
+        /* flex-grow fill out the empty/remaining space of the flex container */
+        /* By default flex-grow is 0 for all children */
+
+        /* ------------------------------------------------------------------------------------- */
+        /* flex-shrink */
+        /* By default flex-shrink value for all children is 1 */
+        /* if the flex container is smaller than the flex item height/width it will shrink to normal height / width of the item */
+        /* to preserve the height/width of the flex item we use flex-shrink: 0; */
+        /* to reduce the size less tan the normal size of the item , we use flex-shrink : 2(ration: 1/2 of the original item ) */
+
+        /* ------------------------------------------------------------------------------------- */
+        /* flex-basis */
+        /* flex-basis - sets the initial main size of a flex item. */
+        /* refer udemy video for more info */
+      }
+
+      .box-3 {
+        /* order: -1; */
+        /* align-self: stretch; */
+        /* flex-grow: 1;(more than remaining elements & fill the empty space) */
+        width: 300px;
+        flex-shrink: 0;
+      }
+
+      .box-5 {
+        /* order: 1; */
+        
+        /* align-self: center; */
+        /* flex-grow: 3;  (more than remaining elements  & fill the empty space)*/
+      }
+
+      .box-1 {
+        align-self: flex-start;
+      }
+
+      .container-1 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <!-- <div class="box dummy">D</div>
+      <div class="box dummy">D</div>
+      <div class="box dummy">D</div>
+      <div class="box dummy">D</div>
+      <div class="box dummy">D</div> -->
+    </div>
+    <!-- 
+    <div class="container-1">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box dummy">D</div>
+      <div class="box dummy">D</div>
+      <div class="box dummy">D</div>
+      <div class="box dummy">D</div>
+      <div class="box dummy">D</div>
+    </div> -->
+  </body>
+</html>
