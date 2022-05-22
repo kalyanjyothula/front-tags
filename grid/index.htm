@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+      .container {
+        display: grid;
+        /* grid-template-columns: 200px 300px; 2 column layout */
+        grid-template-columns: 200px 300px 200px; /* 3 column layout */
+        /* units */
+        /* px rem em % auto fr */
+        /* fr- fraction of available space  & responsive than % */
+        /* grid template row */
+        grid-template-rows: 100px 300px 200px; /* first row, 2nd row ... etc */
+        /* height: 100vh; */
+        grid-template-rows: 1fr 2fr auto; /* first row, 2nd row ... etc */
+
+        /* grid gap */
+        /* grid-gap: 20px; */
+        /* grid-row-gap: 10px; */
+        /* grid-column-gap: 10px; */
+        /* grid-gap - absolete */
+        /* gap - new style */
+        /* gap: 10px; */
+        /* gap: 10px 20px; */
+      }
+      /* grid line */
+      .cell-3 {
+        /* grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3; */
+        /* short form */
+        /* grid-row: 1/-1;
+        grid-column: 1/-1; */
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cell">cell 1</div>
+      <div class="cell cell-1">cell 2</div>
+      <div class="cell cell-2">cell 3</div>
+      <div class="cell cell-3">cell 4</div>
+      <div class="cell cell-4">cell 5</div>
+      <div class="cell cell-5">cell 6</div>
+      <div class="cell">cell 7</div>
+      <div class="cell">cell 8</div>
+    </div>
+  </body>
+</html>
