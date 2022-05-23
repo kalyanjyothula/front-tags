@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+      /* auto fit - it fits the items into the block & not create extra blocks for imaginary elements */
+      /* auto fill - it fill the items into the block & create extra blocks for imaginary elements  */
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      .container-1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* shrink the browser width to see the difference */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Auto fit</h1>
+    <div class="container">
+      <div class="cell">cell1</div>
+      <div class="cell">cell2</div>
+      <div class="cell">cell3</div>
+      <div class="cell">cell4</div>
+      <div class="cell">cell5</div>
+      <div class="cell">cell6</div>
+    </div>
+
+    <h1>Auto fill</h1>
+    <div class="container-1">
+      <div class="cell">cell1</div>
+      <div class="cell">cell2</div>
+      <div class="cell">cell3</div>
+      <div class="cell">cell4</div>
+      <div class="cell">cell5</div>
+      <div class="cell">cell6</div>
+    </div>
+  </body>
+</html>
